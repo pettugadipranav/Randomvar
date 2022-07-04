@@ -24,12 +24,12 @@ for i in range(0,80):
 	
 plt.grid() #creating the grid
 
-plt.plot(x,err,'bo')#plotting empirical CDF
+plt.plot(x,err,'bo')#plotting Stimulation CDF
 
-plt.plot(x,ty,color="orange")#plotting analytical CDF
+plt.plot(x,ty,color="orange")#plotting Theory CDF
 
 plt.xlabel('$x$')
 plt.ylabel('$F_X(x)$')
-plt.legend(["Simulation", "Analysis"])
-#plt.savefig('../figs/uni_cdf.png')
+plt.legend(["Numerical", "Theoritical"])
+plt.savefig('../figs/1-2.png')
 plt.show()

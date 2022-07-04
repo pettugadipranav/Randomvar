@@ -1,15 +1,7 @@
-#Importing numpy, scipy, mpmath and pyplot
 import numpy as np
 import mpmath as mp
 import scipy 
 import matplotlib.pyplot as plt
-
-#if using termux
-import subprocess
-import shlex
-#end if
-
-
 maxrange=50
 maxlim=6.0
 x = np.linspace(-maxlim,maxlim,maxrange)#points on the x axis
@@ -37,16 +29,11 @@ def gauss_pdf(x):
 vec_gauss_pdf = scipy.vectorize(gauss_pdf)
 
 plt.plot(x[0:(maxrange-1)].T,pdf,'o')
-plt.plot(x,vec_gauss_pdf(x))#plotting the CDF
+plt.plot(x,vec_gauss_pdf(x))#plotting the PDF
 plt.grid() #creating the grid
 plt.xlabel('$x_i$')
 plt.ylabel('$p_X(x_i)$')
 plt.legend(["Numerical","Theory"])
-
-#if using termux
-#plt.savefig('../figs/uni_pdf.pdf')
-#plt.savefig('../figs/uni_pdf.eps')
-#subprocess.run(shlex.split("termux-open ../figs/uni_pdf.pdf"))
+plt.savefig("../figs/2-3.png")
 
 plt.show() #opening the plot window
-
