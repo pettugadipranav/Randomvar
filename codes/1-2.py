@@ -7,10 +7,14 @@ import matplotlib.pyplot as plt
 x = np.linspace(-4,4,80)#points on the x axis
 #Theory graph
 #Obtained Theory graph points
-left = np.zeros(40)
-main = np.linspace(0,1,10)
-right = np.ones(30)
-ty = np.concatenate([left,main, right])
+
+def uniCdf(x):
+    if (x < 0): return 0
+    elif (0 <= x < 1): 
+        return x*1.0
+    else: return 1
+
+  func = scipy.vectorize(uni_cdf, otypes=['double'])
 #Analytical Graph
 simlen = int(1e6) #number of samples
 err = [] #declaring probability list
