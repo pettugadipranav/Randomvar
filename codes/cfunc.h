@@ -185,7 +185,7 @@ double  estimator(char *str1,char *str2,int len,int req)
 int i;
 long double temp1,temp2,counter1=0,counter2=0,counter=0;
 //counter represents X=1
-combo(str1,"gau.dat","equi.dat",len);
+combo(str1,"gau.dat","equi.dat",len,0.5);
 equiprobable(str2,len);
 FILE *fp1,*fp2;
 fp1=fopen(str1,"r");// AX+N
