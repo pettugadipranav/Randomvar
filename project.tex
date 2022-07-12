@@ -722,14 +722,15 @@ Fig \ref{fig:4.2} and Fig \ref{fig:4.3}
 \item Generate equiprobable $X \in \cbrak{1,-1}$.
 \solution Download the following files and execute the  C program.
 \begin{lstlisting}
-
-
+$ https://github.com/pettugadipranav/Randomvar/blob/main/codes/5-1.c
+$ https://github.com/pettugadipranav/Randomvar/blob/main/codes/cfunc.h
 \end{lstlisting}
 Download the above files and execute the following commands
 \begin{lstlisting}
 $ gcc 5-1.c
 $ ./a.out
 \end{lstlisting}
+
 \item Generate
 \begin{align}
     Y=AX+N,
@@ -737,18 +738,20 @@ $ ./a.out
 Where $A=5$ dB, and $N\sim \aleph(0,1)$.\\
 \solution:
 \begin{lstlisting}
-
+$ https://github.com/pettugadipranav/Randomvar/blob/main/codes/5-2.c
+$ https://github.com/pettugadipranav/Randomvar/blob/main/codes/cfunc.h
 \end{lstlisting}
 Download the above files and execute the following commands
 \begin{lstlisting}
 $ gcc 5-2.c
 $ ./a.out
 \end{lstlisting}
+
 	\item Plot $Y$ using a scatter plot.\\
 	\solution
 	The CDF of $V$ is plotted in Fig. \ref{fig:5.3} using the code below
 \begin{lstlisting}
-
+$ https://github.com/pettugadipranav/Randomvar/blob/main/codes/5-3.py
 \end{lstlisting}
 Download the above files and execute the following commands to produce Fig.\ref{fig:5.3}
 \begin{lstlisting}
@@ -760,6 +763,7 @@ $ python3 5-3.py
 \caption{The Scatter Plot}
 \label{fig:5.3}
 \end{figure}
+
 \item Guess how to estimate $X$ from $Y$.\\
 	\solution:
 	\begin{enumerate}
@@ -778,8 +782,8 @@ and
 \end{equation}
 	\solution:
 \begin{lstlisting}
-
-
+$ https://github.com/pettugadipranav/Randomvar/blob/main/codes/5-5.c
+$ https://github.com/pettugadipranav/Randomvar/blob/main/codes/cfunc.h
 \end{lstlisting}
 Download the above files and execute the following commands to get the result
 \begin{lstlisting}
@@ -818,11 +822,11 @@ Verify by plotting  the theoretical $P_e$ with respect to $A$ from 0 to 10 dB.  
     \text{Similarly, }P_{e|1}&=Q_N(A)
 \end{align}
 \begin{lstlisting}
-
+$ https://github.com/pettugadipranav/Randomvar/blob/main/codes/5-7.py
 \end{lstlisting}
 Download the above files and execute the following commands to produce Fig.\ref{fig:5.6}
 \begin{lstlisting}
-
+$ python3 5-7.py
 \end{lstlisting}
 \begin{figure}[!h]
 \centering

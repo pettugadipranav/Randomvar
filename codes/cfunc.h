@@ -156,9 +156,9 @@ void equiprobable(char *str,int len)
 
 //Y=AX+N
 
-void combo(char *str,char *str2,char *str3,int len)
+
+void combo(char *str,char *str2,char *str3,int len,double a)
 {
-  
 int i,j,equi;//equi refers to numbers in BErnoulli
 double temp;//temp referes to numbers in gaussian
 FILE *fp,*gaufile,*equifile;
@@ -172,10 +172,11 @@ for (i = 0; i < len; i++)
 {
 fscanf(equifile,"%d",&equi);
 fscanf(gaufile,"%lf",&temp);
-fprintf(fp,"%lf\n",0.5*equi+temp);
+fprintf(fp,"%lf\n",a*equi+temp);
 }
 fclose(fp);
 }
+
 
 double  estimator(char *str1,char *str2,int len,int req)
 {
